@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.register.css">
+    <link rel="stylesheet" href="style.voltar.css">
+</head>
+<body>
+    <button onclick="goBack()" class="botao-voltar">Voltar</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script><br>
+    <h1>sign-up</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+            <label for="password">re-type password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Eu concordo com os <a href="termos_de_uso.html">Termos de Uso</a> e a <a href="politica_de_privacidade.html">Política de Privacidade</a>.</label><br><br>
+        <br><br>
+
+        <input type="submit" value="login">
+
+            
+    </form>
+
+</body>
+</html>
